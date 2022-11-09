@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Formulaires</title>
+</head>
+
+<body>
+    <form method="post" action="traitement.php">
+        <p>
+            <label for="pseudo">Votre pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Ex : Zozor" size="30" maxlength="10" />
+        </p>
+    </form>
+    <form method="post" action="traitement.php">
+        <p>
+            <label for="pseudo">Votre pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" />
+            <br />
+            <label for="pass">Votre mot de passe :</label>
+            <input type="password" name="pass" id="pass" /><br />
+
+            <label for="ameliorer">Comment pensez-vous que je pourrais améliorer
+                mon site ?</label><br />
+            <textarea name="ameliorer" id="ameliorer"></textarea>
+            <label for="ameliorer">
+                Comment pensez-vous que je puisse améliorer mon site ?
+            </label>
+            <br />
+            <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+                Améliorer ton site ?!
+                Mais enfin ! Il est tellement génialissime qu'il n'est pas
+                nécessaire de l'améliorer !
+                </textarea
+        </p>
+    </form>
+</body>
+
+</html>
