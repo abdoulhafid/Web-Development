@@ -61,6 +61,102 @@
         </tr>
     </table>
     <!--Un tableau structuré-->
+    <table>
+        <caption>Passagers du vol 377</caption>
+        <thead>
+            <!-- En-tête du tableau -->
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Pays</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <!-- Pied de tableau -->
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Pays</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <!-- Corps du tableau -->
+            <tr>
+                <td>Carmen</td>
+                <td>33 ans</td>
+                <td>Espagne</td>
+            </tr>
+            <tr>
+                <td>Michelle</td>
+                <td>26 ans</td>
+                <td>États-Unis</td>
+            </tr>
+            <tr>
+                <td>François</td>
+                <td>43 ans</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Martine</td>
+                <td>34 ans</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Jonathan</td>
+                <td>13 ans</td>
+                <td>Australie</td>
+            </tr>
+            <tr>
+                <td>Xu</td>
+                <td>19 ans</td>
+                <td>Chine</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Fusioooon-->
+    <!--la fusion de colonnes : s’effectue horizontalement. On utilisera l’attribut colspan
+    La fusion de lignes : là, deux lignes seront groupées entre elles. La fusion s’effectuera
+    verticalement. On utilisera l’attribut rowspan.-->
+    <table>
+        <tr>
+            <th>Titre du film</th>
+            <th>Pour enfants ?</th>
+            <th>Pour adolescents ?</th>
+        </tr>
+        <tr>
+            <td>Massacre à la tronçonneuse</td>
+            <td>Non, trop violent</td>
+            <td>Oui</td>
+        </tr>
+        <tr>
+            <td>Les bisounours font du ski</td>
+            <td>Oui, adapté</td>
+            <td>Pas assez violent...</td>
+        </tr>
+        <tr>
+            <td>Lucky Luke, seul contre tous</td>
+            <td colspan="2">Pour toute la famille !</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Titre du film</th>
+            <td>Massacre à la tronçonneuse</td>
+            <td>Les bisounours font du ski</td>
+            <td>Lucky Luke, seul contre tous</td>
+        </tr>
+        <tr>
+            <th>Pour enfants ?</th>
+            <td>Non, trop violent</td>
+            <td>Oui, adapté</td>
+            <td rowspan="2">Pour toute la famille !</td>
+        </tr>
+        <tr>
+            <th>Pour adolescents ?</th>
+            <td>Oui</td>
+            <td>Pas assez violent...</td>
+        </tr>
+    </table>
 
 </body>
 
