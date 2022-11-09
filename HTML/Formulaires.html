@@ -34,8 +34,134 @@
                 Améliorer ton site ?!
                 Mais enfin ! Il est tellement génialissime qu'il n'est pas
                 nécessaire de l'améliorer !
-                </textarea
+            </textarea>
+    </form>
+    <!--Cases à cocher-->
+    <form method="post" action="traitement.php">
+        <p>
+            Cochez les aliments que vous aimez manger :<br />
+            <input type="checkbox" name="frites" id="frites" />
+            <label for="frites">Frites</label><br />
+            <input type="checkbox" name="steak" id="steak" /> <label for="steak">
+                Steak haché</label><br />
+            <input type="checkbox" name="epinards" id="epinards" />
+            <label for="epinards">Epinards</label><br />
+            <input type="checkbox" name="huitres" id="huitres" />
+            <label for="huitres">Huitres</label>
         </p>
+    </form>
+    <!--Zones d'options Radio-->
+    <form method="post" action="traitement.php">
+        <p>
+            Veuillez indiquer la tranche d'âge dans laquelle vous vous
+            situez :<br />
+            <input type="radio" name="age" value="moins15" id="moins15" />
+            <label for="moins15">Moins de 15 ans</label><br />
+            <input type="radio" name="age" value="medium15-25" id="medium15-25" />
+            <label for="medium15-25">15-25 ans</label><br />
+            <input type="radio" name="age" value="medium25-40" id="medium25-40" />
+            <label for="medium25-40">25-40 ans</label><br />
+            <input type="radio" name="age" value="plus40" id="plus40" />
+            <label for="plus40">Encore plus vieux que ça ?!</label>
+        </p>
+    </form>
+    <form method="post" action="traitement.php">
+        <p>
+            Veuillez indiquer la tranche d'âge dans laquelle vous vous
+            situez :<br />
+            <input type="radio" name="age" value="moins15" id="moins15" />
+            <label for="moins15">Moins de 15 ans</label><br />
+            <input type="radio" name="age" value="medium15-25" id="medium15-25" />
+            <label for="medium15-25">15-25 ans</label><br />
+            <input type="radio" name="age" value="medium25-40" id="medium25-40" />
+            <label for="medium25-40">25-40 ans</label><br />
+            <input type="radio" name="age" value="plus40" id="plus40" />
+            <label for="plus40">Encore plus vieux que ça ?!</label>
+        </p>
+        <p>
+            Sur quel continent habitez-vous ?<br />
+            <input type="radio" name="continent" value="europe" id="europe" />
+            <label for="europe">Europe</label><br />
+            <input type="radio" name="continent" value="afrique" id="afrique" />
+            <label for="afrique">Afrique</label><br />
+            <input type="radio" name="continent" value="asie" id="asie" />
+            <label for="asie">Asie</label><br />
+            <input type="radio" name="continent" value="amerique" id="amerique" />
+            <label for="amerique">Amérique</label><br />
+            <input type="radio" name="continent" value="australie" id="australie" /> <label
+                for="australie">Australie</label>
+        </p>
+    </form>
+    <!--Listes déroulantes-->
+    <form method="post" action="traitement.php">
+        <p>
+            <label for="pays">Dans quel pays habitez-vous ?</label><br />
+            <select name="pays" id="pays">
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="royaume-uni">Royaume-Uni</option>
+                <option value="canada">Canada</option>
+                <option value="etats-unis">États-Unis</option>
+                <option value="chine">Chine</option>
+                <option value="japon">Japon</option>
+                <!--Si vous voulez qu’une option soit sélectionnée par défaut, utilisez cette fois l’attribut selected :-->
+                <option value="canada" selected>Canada</option>
+            </select>
+        </p>
+    </form>
+    <form method="post" action="traitement.php">
+        <p>
+            <label for="pays">Dans quel pays habitez-vous ?</label><br />
+            <select name="pays" id="pays">
+                <optgroup label="Europe">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                    <option value="royaume-uni">Royaume-Uni</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="canada">Canada</option>
+                    <option value="etats-unis">Etats-Unis</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="chine">Chine</option>
+                    <option value="japon">Japon</option>
+                </optgroup>
+            </select>
+        </p>
+    </form>
+    <!--Regrouper les champs-->
+    <form method="post" action="traitement.php">
+        <fieldset>
+            <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+            <label for="nom">Quel est votre nom ?</label>
+            <input type="text" name="nom" id="nom" />
+            <label for="prenom">Quel est votre prénom ?</label>
+            <input type="text" name="prenom" id="prenom" />
+            <label for="email">Quel est votre e-mail ?</label>
+            <input type="email" name="email" id="email" />
+        </fieldset>
+        <fieldset>
+            <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+            <p>
+                Faites un souhait que vous voudriez voir exaucé :
+                <input type="radio" name="souhait" value="riche" id="riche" />
+                <label for="riche">Etre riche</label>
+                <input type="radio" name="souhait" value="celebre" id="celebre" />
+                <label for="celebre">Etre célèbre</label>
+                <input type="radio" name="souhait" value="intelligent" id="intelligent" /> <label for="intelligent">Etre
+                    <strong>encore</strong>
+                    plus intelligent</label>
+                <input type="radio" name="souhait" value="autre" id="autre" />
+                <label for="autre">Autre...</label>
+            </p>
+            <p>
+                <label for="precisions">Si "Autre", veuillez préciser :</label>
+                <textarea name="precisions" id="precisions" cols="40" rows="4">
+        </textarea>
+            </p>
+        </fieldset>
     </form>
 </body>
 
