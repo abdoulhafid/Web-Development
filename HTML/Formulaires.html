@@ -138,7 +138,7 @@
             <label for="nom">Quel est votre nom ?</label>
             <input type="text" name="nom" id="nom" />
             <label for="prenom">Quel est votre prénom ?</label>
-            <input type="text" name="prenom" id="prenom" />
+            <input type="text" name="prenom" id="prenom" /><!--autofocus :Sélectionner automatiquement un champ-->-->
             <label for="email">Quel est votre e-mail ?</label>
             <input type="email" name="email" id="email" />
         </fieldset>
@@ -163,6 +163,12 @@
             </p>
         </fieldset>
     </form>
+    <!--Sélectionner automatiquement un champ-->
+    <input type="text" name="prenom" id="prenom" autofocus />
+    <!--Rendre un champ obligatoire-->
+    <input type="text" name="prenom" id="prenom" required />
+    <!--Ajouter le bouton d’envoi-->
+    <input type="submit" value="Envoyer" />
 </body>
 
 </html>
