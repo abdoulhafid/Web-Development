@@ -27,6 +27,7 @@ h1{
     font-weight: bold; 
     /*Centre element*/
     text-align: center;
+    border: 3px blue dashed; /*une bordure bleue, en tirets,*/
 }
 .imageflottante{
     float: left;
