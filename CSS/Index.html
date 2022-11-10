@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Premiers tests du CSS</title>
 </head>
+
 <body>
     <h1>Mon super site</h1>
-    <p style="color: blue;">Bonjour et bienvenue sur mon site !</p>
+    <p class="introduction">Bonjour et <span class="salutations">Bienvenue</span> sur mon site !</p>
     <p>Pour le moment, mon site est un peu <em>vide</em>. Patientez
         encore un peu !
     </p>
+    <p><img src="flottants.gif" class="imageflottante" alt="Image flottante" />
+        Ceci est un texte normal de paragraphe, écrit à la suite de l'image et qui
+        l'habillera car l'image est flottante.</p>
+    <p class="dessous">Ce texte est écrit sous l'image flottante.</p>
+
+    <!--La couleur et le fond-->
+    <h1>Qui a éteint la lumière ?</h1>
+    <p>Brr, il fait tout noir sur ce site, c'est un peu <mark>inquiétant
+        </mark> comme ambiance non, vous ne trouvez pas ?</p>
 </body>
 
 </html>

@@ -1,3 +1,51 @@
-P{
+.introduction{
     color: blue;
+    text-decoration: blink;
+}
+.salutations, em{
+    color: blue;
+    /*souligne*/
+    text-decoration: underline;
+    /*.barre*/
+    text-decoration: line-through;
+    /*.ligne_dessus*/
+    text-decoration: overline;
+}
+P{
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    opacity: 0.3;
+    color: white;
+    
+}
+h1{
+    font-size: 1.3em;
+    /*En Italie*/
+    font-style: italic;
+    /*En Gras*/
+    font-weight: bold; 
+    /*Centre element*/
+    text-align: center;
+}
+.imageflottante{
+    float: left;
+}
+.dessous{
+    clear: both;
+}
+/*La couleur et le fond*/
+body{
+
+    background-color: black;
+    color: white;
+    background-image:url("photos.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat; /*Le fond ne sera pas répété*/
+    background-position: 30px 50px;
+    background-position: top right; /* Le fond sera placé en haut à droite */
+}
+mark{
+    background-color: red;
+    color: black;
 }
