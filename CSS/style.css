@@ -15,8 +15,8 @@ P{
     font-size: 0.8em;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
-    opacity: 0.3;
-    color: white;
+    opacity: 0.6;
+    
     
 }
 h1{
@@ -38,8 +38,8 @@ h1{
 body{
 
     background-color: black;
-    color: white;
-    background-image:url("photos.jpg");
+    
+    background:url("photos.jpg");
     background-attachment: fixed; /* Le fond restera fixe */
     background-repeat: no-repeat; /*Le fond ne sera pas répété*/
     background-position: 30px 50px;
