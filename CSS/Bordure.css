@@ -1,0 +1,11 @@
+p{
+   /* border: solid;
+    border-radius: 30px / 10px;
+    border-color: blue;
+    background-color: black;*/
+    font-family: 'Times New Roman', Times, serif;
+    /*color: white;*/
+    box-shadow: 6px 6px 6px black;
+    border: solid;
+    text-shadow: 2px 2px 4px black;
+}
