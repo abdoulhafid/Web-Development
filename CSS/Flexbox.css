@@ -1,0 +1,37 @@
+#conteneur {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-content: center;
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*
+    justify-content: center;
+    align-items: center;
+    *
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+   /* flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*flex-wrap: wrap; /*les éléments vont à la ligne lorsqu’il n’y a plus la place ;*/
+    /*justify-content: space-around; /*les éléments sont étirés sur tout l’axe, mais ils laissent aussi de l’espace sur les extrémités.*/
+}
+
+/*
+.element{
+    margin: auto;
+}
+*/
+
+/*.element:nth-child(2) {
+    /* On prend le deuxième bloc élément. */
+    /*background-color: blue;
+    align-self: flex-end;
+    /* Seul ce bloc sera aligné à la fin. */
+    /*
+}

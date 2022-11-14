@@ -1,6 +1,30 @@
-p{
-    width: 50%;
-    min-width: 400px
-    border: solid 1px red;
+
+.breack{
+    width: 250px;
+    height: 110px;
     text-align: justify;
+    border: 1px solid black;
+    word-wrap: break-word;
+    margin: 50px;
+
+}
+
+p{
+    width: 250px;
+    height: 110px;
+    text-align: justify;
+    border: 1px solid black;
+    overflow: auto; /*c’est le navigateur qui décide de mettre ou non des barres de défilement*/
+    /*
+    width: 250px; /* On a indiqué une largeur (obligatoire). */
+    height: 110px;
+    border: 1px solid black ;
+    text-align: justify;
+    
+    padding: 12px;/* Marge interieur de 50px */
+    margin: auto; /* Marge extérieure de 50px */ /* On peut donc demander que le bloc soit centré avec
+    margin-bottom: 20px;
+    */
+    margin: 20px;
+    
 }
