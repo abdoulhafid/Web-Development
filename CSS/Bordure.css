@@ -9,3 +9,23 @@ p{
     border: solid;
     text-shadow: 2px 2px 4px black;
 }
+      /*Créer des apparences dynamiques*/
+a:hover{
+    text-decoration: underline; /* Quand on pointe sur un paragraphe */
+    color: green;
+}
+
+a:active{
+    background-color: #FFCC66; /*Quand le visiteur clique sur le lien */
+    ;
+}
+a:focus /* Quand le visiteur sélectionne le lien */
+{
+background-color: #FFCC66;
+}
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+color: #AAA; /* Appliquer une couleur grise */
+}
+
+           

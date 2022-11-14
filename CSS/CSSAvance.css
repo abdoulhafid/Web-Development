@@ -1,0 +1,17 @@
+ /*Effets avancés en CSS*/
+ section {
+     /* -webkit-column-count: 4; /* Opera, Safari, Chrome */
+     -webkit-columns: 4 100px;
+     -webkit-column-gap: 100px;
+     /*column-gap : indique l’espace entre deux colonnes (en pixels, em... mais pas en pourcentages) ;*/
+     -webkit-column-rule: 2px dashed #555;
+     text-align: justify;
+ }
+
+ /*Ici, column-rule va servir de liseré de séparation entre les colonnes :*/
+ section h1 {
+    /* Le titre s'étalera sur toutes les colonnes. */
+     /*-webkit-column-span: all;*/
+     -webkit-column-break-before: always;
+
+ }

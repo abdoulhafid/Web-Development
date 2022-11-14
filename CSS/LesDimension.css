@@ -1,0 +1,6 @@
+p{
+    width: 50%;
+    min-width: 400px
+    border: solid 1px red;
+    text-align: justify;
+}
