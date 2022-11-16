@@ -7,29 +7,82 @@ body {
 
 #conteneur {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+                    "header header"
+                    "nav article"
+                    "footer footer";
+                    
+    background-color: #ccc;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    /*
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    /*grid-template-columns: repeat(3, 200px);*/
+    /*grid-template-rows: repeat(2, 1fr);
+    /*creer une nouvelle colonne */
+   /* grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
+    /*aligner les contenus sur une ligne*/
+    /*grid-auto-flow: row;*/
+     /*aligner les contenus sur une colonne*/
+     /*grid-auto-flow: column;*/
+    
+     /*aligner le conteneur sur l'axe vert */
+     /*
     align-content: center;
-    /*aligner le conteneur sur l'axe vert */
-   justify-content: center;
     /*aligner le conteneur sur l'axe horiz */
+   /*justify-content: center;
+   
     /* grid-gap: 20px; /*espace entre les lignes ou colonnes*/
     /*align-items: end;*/
-    /*justify-items: center;*/
+    /*justify-items: center;
+    
+    
     height: 600px;
     width: 90%;
     margin: auto;
     background-color: aliceblue;
+*/
+}
+header{
+    background-color: #ff0;
+    grid-area: header;
+   /* grid-column: 1 /span 2;*/
+}
+nav{
+    background-color: #f01;
+    grid-area: nav;
+}
+article{
+    background-color: #ff03;
+    grid-area: article;
+}
+footer{
+    background-color: #ff9;
+    grid-area: footer;
+    /*grid-column: 1 / span 2 ;*/
+}
+.content{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
 
 }
 
-#conteneur div {
+/*#conteneur div {
+    /*
     text-align: center;
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
     /* texte en gras*/
-    border: 1px solid black;
+    /*border: 1px solid black;
 }
 
 .un {
@@ -42,8 +95,8 @@ body {
     grid-column-end: 5;
    grid-column-end: span 4;
    */
-}
-
+/*}
+/*
 .deux {
     background-color: #fc0;
 
@@ -51,28 +104,31 @@ body {
     grid-row: 2 / span 2;
     grid-row: 2;
     grid-row-end: 4;
-    */
-}
-
+    
+}*/
+/*
 .trois {
     background-color: #f96;
-}
-
+}*/
+/*
 .quatre {
     background-color: #fc6;
+    grid-column: 4 / span 2;
    /* align-self: center;*/
-    justify-self: start;
+    /*justify-self: start;
     /*
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
     /*grid-row-end: 6;
     grid-row-end: span 3;*/
-}
+  /*}
+*/
 
-
+/*
 .cinq{
     background-color: #fc9;
+    grid-row: 2 / span 2;
 }
 .six{
     background-color: #f6f;
@@ -82,4 +138,4 @@ body {
 }
 .huit{
     background-color: #fcf;
-}
+}*/
