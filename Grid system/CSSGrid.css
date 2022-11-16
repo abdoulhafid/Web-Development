@@ -1,38 +1,76 @@
-body{
+body {
     padding: 0;
     margin: 0;
-    background-color:  #000; ;
+    background-color: #000;
+    ;
 }
-#conteneur{
+
+#conteneur {
     display: grid;
-    grid-template-columns: 300px 200px;
-    grid-template-rows: 50% auto;
-    grid-gap: 20px 10px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 100px);
+    align-content: center;
+    /*aligner le conteneur sur l'axe vert */
+   justify-content: center;
+    /*aligner le conteneur sur l'axe horiz */
+    /* grid-gap: 20px; /*espace entre les lignes ou colonnes*/
+    /*align-items: end;*/
+    /*justify-items: center;*/
     height: 600px;
     width: 90%;
     margin: auto;
     background-color: aliceblue;
-    
+
 }
-#conteneur div{
+
+#conteneur div {
     text-align: center;
     padding: 20px;
     font-size: 20px;
-    font-weight: bold; /* texte en gras*/
+    font-weight: bold;
+    /* texte en gras*/
     border: 1px solid black;
 }
-.un{
+
+.un {
     background-color: #f90;
+
+    /*
+     grid-column: 1 / span 4;
+    background-color: #f90;
+    grid-column-start: 1;
+    grid-column-end: 5;
+   grid-column-end: span 4;
+   */
 }
-.deux{
+
+.deux {
     background-color: #fc0;
+
+    /*
+    grid-row: 2 / span 2;
+    grid-row: 2;
+    grid-row-end: 4;
+    */
 }
-.trois{
+
+.trois {
     background-color: #f96;
 }
-.quatre{
+
+.quatre {
     background-color: #fc6;
+   /* align-self: center;*/
+    justify-self: start;
+    /*
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    /*grid-row-end: 6;
+    grid-row-end: span 3;*/
 }
+
+
 .cinq{
     background-color: #fc9;
 }
