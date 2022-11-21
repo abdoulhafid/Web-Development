@@ -7,16 +7,17 @@ body {
 
 #conteneur {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-template-areas: 
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px minmax(200px,auto) 100px;
+   /* grid-template-areas: 
                     "header header"
                     "nav article"
                     "footer footer";
-                    
+   
+        */            
     background-color: #ccc;
     width: 90%;
-    height: 600px;
+    /*height: 600px;*/
     margin: auto;
     /*
     display: grid;
@@ -48,22 +49,27 @@ body {
     background-color: aliceblue;
 */
 }
+p{
+    color: white;
+}
 header{
     background-color: #ff0;
-    grid-area: header;
+   /* grid-area: header;*/
    /* grid-column: 1 /span 2;*/
 }
 nav{
     background-color: #f01;
-    grid-area: nav;
+   /* grid-area: nav;*/
 }
 article{
     background-color: #ff03;
-    grid-area: article;
+    /*grid-area: article;*/
+    overflow: auto;
 }
 footer{
     background-color: #ff9;
-    grid-area: footer;
+    order: -2;
+    /*grid-area: footer;*/
     /*grid-column: 1 / span 2 ;*/
 }
 .content{
