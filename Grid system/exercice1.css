@@ -1,49 +1,71 @@
 body{
     background-color: antiquewhite;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
 }
 #conteneur{
     background-color: aqua;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
+    height: 100vh; /* pour completer la hauteur de l'ecran*/
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+           "un un "
+           "deux deux"
+           "trois trois"
+           "quatre six"
+           "sept huit"
+           "neuf neuf";
+
+   
+    
+}
+#conteneur div{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+   
 }
 .un{
     background-color: #f01;
-    grid-column: 1 /span 5;
+    grid-area: un;
+   
+            
+  
 }
 .deux{
     background-color: #f0f;
-    grid-column: 1 / span 0;
-    grid-row: 2 / span 2 ;
+    grid-area: deux;
     
 }
 .trois{
     background-color: #f6f;
-    /*grid-column: 2 / span 3;*/
-   
-    grid-column: 2 / span 5 ;
-    grid-row: 2 ;
+    grid-area: trois;
 }
 .quatre{
     background-color: #ff0;
-    grid-column: 2 /3;
-    grid-row: 3 / 2;
+    grid-area: quatre;
 }
 .cinq{
     background-color: #ff9;
+    grid-area: cinq;
+    display: none; /*pour masque le bloc div 5*/
 }
 .six{
     background-color: #f90;
+    grid-area: six;
 }
 .sept{
     background-color: #f89;
-    grid-row: 3;
+    grid-area: sept;
+   
 }
 .huit{
     background-color: #f85;
+    grid-area: huit;
 }
 .neuf{
     background-color: #f56;
-    grid-column: 1 /6;
+    grid-area: neuf;
 }
