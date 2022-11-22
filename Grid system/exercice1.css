@@ -69,3 +69,23 @@ body{
     background-color: #f56;
     grid-area: neuf;
 }
+@media screen and (min-width: 850px) {
+    #conteneur{
+       
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-template-areas:
+               "un un un un "
+               "deux trois trois trois"
+               "deux quatre quatre cinq"
+               "deux six six cinq"
+               "sept sept huit huit"
+               "neuf neuf neuf neuf";
+    
+               
+        
+    }
+    .cinq{
+        display: block;
+    }
+}
