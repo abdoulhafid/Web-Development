@@ -1,0 +1,27 @@
+h1{
+    /*convertir le texte en majus*/
+    text-transform: uppercase; 
+    text-align: center;
+    /*ombre pour un titre*/
+    text-shadow: 2px 3px 10px rgb(34, 30, 30);
+    /*espace entre les lettre*/
+    letter-spacing: 5px;
+}
+p{
+    /*convertir le texte en minus*/
+    text-transform: lowercase;
+    /*convertir chaque mot en majus
+    text-transform: capitalize;
+    */
+    text-indent: 20px;
+    /*espace entre les lignes*/
+    line-height: 35px;
+    /*espace entre les mots*/
+    word-spacing: 10px;
+}
+
+div{
+    width: 400px;
+    /*centre le contenu du paragraphe*/
+    margin: auto;
+}

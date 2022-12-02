@@ -1,0 +1,12 @@
+.ovale{
+    /*arondir les angle de l'image*/
+   /* border-radius: 50%;
+   border-top-right-radius: 50%;
+   border-bottom-right-radius: 50%;
+   */
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+   /*force l'image s'adapter largeur et longueur*/
+   object-fit: cover;
+}
