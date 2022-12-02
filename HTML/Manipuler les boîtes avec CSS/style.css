@@ -1,0 +1,42 @@
+#box{
+    width: 350px;
+    height: 200px;
+    /*margin: auto;*/
+    background-color: #ccc;
+    box-shadow: 10px 25px 14px black inset;
+    padding: 10px;
+    border-radius: 25px;
+    margin: auto;
+    /* gérer le dépassement du contenu d'un élément dans son bloc*/
+    overflow: scroll;
+    /*float: left;*/
+}
+/*
+img{
+    width: 100px;
+    float: right;
+    /*espace entre le texte et l'image
+    margin-right: 7px;
+}
+*/
+#box2{
+    width: 300px;
+    /*margin: auto;**/
+    background-color: #ccc;
+    box-shadow: 10px 25px 14px black inset;
+    padding: 10px;
+    border-radius: 25px;
+    float: right;
+    clear: left;
+
+}
+#box3{
+    width: 250;
+    /*margin: auto;*/
+    background-color: #ccc;
+    box-shadow: 10px 25px 14px black inset;
+    padding: 10px;
+    border-radius: 25px;
+    float: left;
+
+}

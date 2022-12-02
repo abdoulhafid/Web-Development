@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    /*
+    left: 0px;
+    bottom:  0px;
+    position: absolute;
+    */
+}
+/*
+#box2{
+    background-color: #c8f8f8;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    left: 0px;
+    top: 0px;
+
+    position: absolute;
+    margin: auto;
+}
+*/
+/*
+h1{
+    text-align: center;
+}
+p{
+   margin-left: 210px;
+}
+*/
+section{
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    border: 2px  dashed black;
+    margin: auto;
+}
