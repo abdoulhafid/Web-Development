@@ -1,0 +1,35 @@
+body{
+    /*background-color: blue;*/
+}
+section p/*premier element P de la section*/{
+    color: red;
+}
+section div p{
+    color: aqua;
+}
+/*
+section p:nth-child(1)/*premier element P de la section{
+    color: red;
+}
+*/
+
+/*
+.azure{
+    background-color: aquamarine;
+}
+*/
+/*
+#aquamarine{
+    background-color: yellow;
+}
+*/
+/*seul le premier paragraph est ecrire en blanc
+p:nth-child(2){
+   color: white;
+}
+*/
+/*cible les paragraph pair odd-- pour les paragraph impair
+p:nth-child(even){
+    color: white;
+}
+*/
