@@ -1,12 +1,95 @@
-body{
+body {
     /*background-color: blue;*/
 }
-section p/*premier element P de la section*/{
+input{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+/*type qui contient la letre e*/
+input[type*="e"]{
+    border:2px solid black;
+}
+/*qui commence par s*/
+input[type^="s"]{
+    border:2px solid red;
+}
+/*qui finir par ext*/
+input[type$="ext"]{
+    border:2px solid yellowgreen;
+}
+/*
+/*modifier le titre de dans a 
+a[title]{
+    /*effacer le soulignement*
+    text-decoration: none;
+    color: aqua;
+}
+
+
+/*mettre en couleur les paragraph apres article
+article ~ p{
+    color: rebeccapurple;
+}
+
+/*cible un element enfant*
+section > p{
+  color: red;  
+}
+/*selecteur suivant mettre en couleur tout le 1er paragraph apres le titre*/
+/*h2 + p{
+    color: aqua;
+}
+/*
+#rouge{
+    color: rebeccapurple;
+
+}
+/* Contient tous les paragraphes (p) sauf
+   ceux avec le sélecteur de id "rouge" 
+p:not(#rouge){
+    font-weight: bold;
+}
+*/
+/* Libellés pour les entrées cochées 
+input:checked + label {
+    color: red;
+    font-size: 22px;
+  }
+  /* Éléments radio cochés 
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px orange;
+  }
+  /* Éléments cases à cocher cochés 
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+  }
+  /* Éléments options sélectionnés 
+option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+  }
+  */
+  
+/*La pseudo-classe :only-child représente n'importe quel élément qui est le seul enfant de son élément parent. */
+/*div p:only-child{
+    color: rebeccapurple;
+}
+
+/*
+section p/*premier element P de la section{
     color: red;
 }
 section div p{
     color: aqua;
 }
+a:hover{
+    background-color: yellowgreen;
+}
+section:active{
+    border: 2px solid black;
+}
+*/
 /*
 section p:nth-child(1)/*premier element P de la section{
     color: red;
