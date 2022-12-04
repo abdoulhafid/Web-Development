@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+
+    background-color: aquamarine;
+    border-bottom: 1px solid black;
+    text-align: right;
+    padding: 10px;
+}
+
+.menu li {
+    display: inline;
+    margin: 15px;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.voir-menu,
+.cacher-menu, #check {
+    display: none;
+}
+
+.cacher-menu {}
+
+@media screen and (max-width:900px) {
+
+    .voir-menu,
+    .cacher-menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .voir-menu:hover,
+    .cacher-menu:hover {
+        color: #666;
+        transition: 0.5s;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        background-color: #f3f3f3;
+        width: 100%;
+        padding-top: 80px;
+        transition: 0.8s;
+    }
+    #check:checked ~ .menu{
+      right: 0;
+    }
+    .cacher-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .menu li{
+        display: block;
+        text-align: center;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #ccc;
+    }
+}
