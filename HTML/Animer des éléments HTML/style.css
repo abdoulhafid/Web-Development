@@ -1,0 +1,8 @@
+.titre{
+    text-align: center;
+    color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+   /* animation-duration: 4s;*/
+   animate-delay:2s
+}  
