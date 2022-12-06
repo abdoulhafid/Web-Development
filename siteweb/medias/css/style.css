@@ -45,6 +45,32 @@ footer{
     transition: 0.5s;
 
 }
+#check{
+
+}
+.voir-menu, .cacher-menu, #check{
+display: none;
+}
+
+.voir-menu{
+
+}
+.cacher-menu{
+
+}
 @media screen and (max-width: 950px) {
-    
+    .voir-menu, .cacher-menu{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .voir-menu:hover, .cacher-menu:hover{
+        color: #666;
+        transition: 0.5s;
+    }
+    .menu li{
+        display: block;
+        margin-left: 22px;
+    }
 }
