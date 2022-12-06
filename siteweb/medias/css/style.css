@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ section {
 section img {
     width: 100%;
 }
-.resume{
+.resume, article{
     background-color: #fff;
     width: 85%;
     margin: auto;
@@ -28,11 +29,23 @@ section img {
     box-shadow: 3px 3px 9px #dddd;
 
 }
+article{
+    height: auto;
+}
+article img {
+    float: right;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+article h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
 .resume h2 {
     text-align: center;
     color: #933;
 }
-.resume p {
+.resume p, article p {
     text-align: justify;
     text-indent: 50px;
 }
@@ -96,6 +109,9 @@ footer{
     transition: 0.5s;
 
 }
+.menu li .on {
+  color: #f60;  
+}
 #check{
 
 }
@@ -108,6 +124,13 @@ display: none;
 }
 .cacher-menu{
 
+}
+h1 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: #933;
+    letter-spacing: 5px;
 }
 
 @media screen and (max-width: 950px) {
@@ -153,9 +176,16 @@ display: none;
         float: none;
         margin-right: 0;
     }
-    .resume{
+    .resume, article{
         height: auto;
         text-align: center;
     
+    }
+    article img {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 450px;
     }
 }
