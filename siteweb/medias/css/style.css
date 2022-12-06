@@ -21,10 +21,58 @@ section img {
     width: 85%;
     margin: auto;
     margin-bottom: 35px;
+    height: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 3px 3px 9px #dddd;
 
 }
+.resume h2 {
+    text-align: center;
+    color: #933;
+}
+.resume p {
+    text-align: justify;
+    text-indent: 50px;
+}
+.resume p:last-child {
+    display: inline;
+    background-color: #f90;
+    padding: 5px 25px ;
+}
+a:hover {
+    color: #fff;
+    transition: 0.7s;
+}
+.ronde {
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.rond-versailles {
+    background-image: url(../images/chateau-versailles.jpg);
+    
+
+
+}
+.rond-chambor {
+    background-image: url(../images/chambord.jpg);
+    
+
+}
+
 footer{
     background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
 }
 .menu{
     list-style: none;
@@ -97,5 +145,17 @@ display: none;
         top: 40px;
         right: 40px;
 
+    }
+    .ronde {
+        width: 65%px;
+        border-radius: 50px;
+        margin-right: 20px;
+        float: none;
+        margin-right: 0;
+    }
+    .resume{
+        height: auto;
+        text-align: center;
+    
     }
 }
