@@ -10,8 +10,11 @@ nav{
     padding: 30px;
     text-align: right;
 }
-section{
+section {
     margin-bottom: 30px;
+}
+section img {
+    width: 100%;
 }
 .resume{
     background-color: #fff;
@@ -58,6 +61,7 @@ display: none;
 .cacher-menu{
 
 }
+
 @media screen and (max-width: 950px) {
     .voir-menu, .cacher-menu{
         display: block;
@@ -71,6 +75,27 @@ display: none;
     }
     .menu li{
         display: block;
-        margin-left: 22px;
+        text-align: center;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #ccc;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #dbdbdb;
+        height: 100vh;
+        width: 100%;
+        transition: 0.7s;
+        padding-top: 80px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .cacher-menu{
+        position:absolute;
+        top: 40px;
+        right: 40px;
+
     }
 }
